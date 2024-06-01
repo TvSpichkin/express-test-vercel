@@ -3,14 +3,14 @@
   "name": "dz-01",
   "builds": [
     {
-      "src": "src/индекс.ts",
+      "src": "src/index.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/индекс.ts"
+      "dest": "src/index.ts"
     }
   ]
 }

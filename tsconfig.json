@@ -115,7 +115,6 @@
     // - bower_components,
     // - jspm_packages,
     // - файлы из папки, указанной в опции компилятора "outDir".
-    "__тесты__",
     "node_modules"
   ]
 }

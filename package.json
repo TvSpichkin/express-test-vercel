@@ -1,12 +1,12 @@
 {
   "name": "dz-01",
   "version": "1.0.0",
-  "main": "src/индекс.ts",
+  "main": "src/index.ts",
   "author": "Extro-Games",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "node bin/индекс.js"
+    "start": "node bin/index.js"
   },
   "dependencies": {
     "express": "^4.19.2"
