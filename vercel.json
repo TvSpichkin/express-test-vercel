@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "name": "express-test-vercel",
+  "name": "dz-01",
   "builds": [
     {
-      "src": "src/РёРЅРґРµРєСЃ.ts",
+      "src": "ист/индекс.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/РёРЅРґРµРєСЃ.ts"
+      "dest": "ист/индекс.ts"
     }
   ]
 }
