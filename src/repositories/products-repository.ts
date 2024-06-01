@@ -1,17 +1,24 @@
-import { productCollection, ProductType } from './db';
+type ProductType = {
+  title: string
+  id: string
+}
+
+let products: ProductType[] = [{id: '1', title: 'tomato'}, {id: '2', title: 'orange'}, {id: '3', title: 'banana'}]
 
 export const productsRepository = {
-  async getProducts(): Promise<ProductType[]> {
-    return productCollection.find({}).toArray()
+  getProducts(): ProductType[] {
+    return products
   },
-  async createProduct(title: string): Promise<ProductType | null> {
+  createProduct(title: string): ProductType | null {
     if (!title.trim()) {
       return null
     }
-    const result = await productCollection.insertOne({title})
-    return {
-      title: title,
-      _id: result.insertedId
+
+    const newProduct: ProductType = {
+      title,
+      id: Date.now().toString()
     }
-  }
+    products.unshift(newProduct)
+    return newProduct
+  },
 }
