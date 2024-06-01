@@ -1,20 +1,20 @@
 import экспресс, { Request, Response } from 'express'
 import { productsRouter } from './routers/products-router';
 
-const app = экспресс()
-const port = process.env.PORT || 5000
+const пр = экспресс()
+const port = process.env.PORT || 3000
 
 const parserMiddleware = экспресс.json()
-app.use(parserMiddleware)
+пр.use(parserMiddleware)
 
 
-app.get('/', (req: Request, res: Response) => {
+пр.get('/', (req: Request, res: Response) => {
   res.send('Hello Samurai')
 })
 
-app.use('/products', productsRouter)
+пр.use('/products', productsRouter)
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+пр.listen(port, () => {
+  console.log(`Пример app listening on port ${port}`)
 })
 
