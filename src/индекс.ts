@@ -1,10 +1,10 @@
-import express, { Request, Response } from 'express'
+import экспресс, { Request, Response } from 'express'
 import { productsRouter } from './routers/products-router';
 
-const app = express()
+const app = экспресс()
 const port = process.env.PORT || 5000
 
-const parserMiddleware = express.json()
+const parserMiddleware = экспресс.json()
 app.use(parserMiddleware)
 
 
