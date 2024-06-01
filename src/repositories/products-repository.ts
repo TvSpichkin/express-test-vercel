@@ -1,22 +1,22 @@
 type ProductType = {
-  title: string
-  id: string
+  название: string
+  ид: string
 }
 
-let products: ProductType[] = [{id: '1', title: 'tomato'}, {id: '2', title: 'orange'}, {id: '3', title: 'banana'}]
+let products: ProductType[] = [{ид: '1', название: 'помидор'}, {ид: '2', название: 'апельсин'}, {ид: '3', название: 'банан'}]
 
 export const productsRepository = {
   getProducts(): ProductType[] {
     return products
   },
-  createProduct(title: string): ProductType | null {
-    if (!title.trim()) {
+    createProduct(название: string): ProductType | null {
+        if(!название.trim()) {
       return null
     }
 
     const newProduct: ProductType = {
-      title,
-      id: Date.now().toString()
+      название,
+      ид: Date.now().toString()
     }
     products.unshift(newProduct)
     return newProduct
