@@ -1,10 +1,16 @@
 {
   "version": 2,
-  "name": "express-products-vercel",
+  "name": "express-test-vercel",
   "builds": [
-    { "src": "src/index.ts", "use": "@vercel/node" }
+    {
+      "src": "src/индекс.ts",
+      "use": "@vercel/node"
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "src/index.ts" }
+    {
+      "src": "/(.*)",
+      "dest": "src/индекс.ts"
+    }
   ]
 }
