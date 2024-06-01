@@ -5,9 +5,6 @@
   "author": "Extro-Games",
   "license": "MIT",
   "scripts": {
-    //"смотр": "tsc -w",
-    //"раз": "nodemon --inspect bin/индекс.js",
-    //"тест": "jest",
     "build": "tsc",
     "start": "node bin/индекс.js"
   },
