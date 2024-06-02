@@ -1,14 +1,15 @@
 {
   "name": "express-test-vercel",
   "version": "1.0.0",
-  "main": "src/index.ts",
+  "main": "ист/индекс.ts",
   "author": "Extro-Games",
   "license": "MIT",
   "scripts": {
-    "watch": "tsc -w",
-    "dev": "nodemon --inspect dist/index.js",
+    "смотр": "tsc -w",
+    "раз": "nodemon --inspect двф/индекс.js",
+    "тест": "jest",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node двф/индекс.js"
   },
   "dependencies": {
     "express": "^4.19.2"

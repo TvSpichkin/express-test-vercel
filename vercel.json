@@ -3,14 +3,14 @@
   "name": "express-test-vercel",
   "builds": [
     {
-      "src": "src/index.ts",
+      "src": "ист/индекс.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/index.ts"
+      "dest": "ист/индекс.ts"
     }
   ]
 }
