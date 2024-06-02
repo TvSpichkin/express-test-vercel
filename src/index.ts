@@ -1,6 +1,6 @@
 import express, {Request, Response} from "express";
 
-export const app = express();
+const app = express();
 const prom = express.json(),
 port = process.env.PORT || 3000;
 
