@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "dz-01",
+  "name": "express-test-vercel",
   "builds": [
     {
       "src": "src/index.ts",
